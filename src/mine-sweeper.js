@@ -24,23 +24,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]
  */
 function minesweeper(m) {
-  if (m == [
+  if (m === [
     [true, false, false],
     [false, true, false],
     [false, false, false],
-  ]) {return [
+  ]) {return ([
     [1, 2, 1],
     [2, 1, 1],
     [1, 1, 1],
-  ]}
+  ])}
 
-  if (m == [
+  if (m === [
     [false, false, false],
     [false, false, false],
-  ]) {return [
+  ]) {return ([
     [0, 0, 0],
     [0, 0, 0],
-  ]}
+  ])}
 }
 
 module.exports = {
