@@ -17,7 +17,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     const isArray = (element) => Array.isArray(element);
     if (array.some(isArray)) {
         depth++;
-       this.calculateDepth(array.flat(1), depth)
+       return this.calculateDepth(array.flat(1), depth)
     }
     return depth
   }
